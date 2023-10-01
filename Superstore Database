@@ -24,3 +24,55 @@ VALUES
     (13, 'Slow Cooker', 'Appliances', 49.95, 30, 4.7),
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
+
+#1. Order items by price and descending
+SELECT (item_name),price
+FROM superstore
+GROUP BY price
+ORDER BY price desc;
+
+#2. Sum all the prices
+SELECT sum(price)
+From Superstore;
+
+#3. Find the average price
+SELECT avg(price)
+From Superstore;
+
+#4. Find the minimum price
+SELECT min(price)
+From Superstore;
+
+#5. Find the maximum price
+SELECT max(price)
+From Superstore;
+
+#6. Count how many items there are
+SELECT count(item_id)
+From Superstore;
+
+#7. Find the avg price in the kitchen supplies category
+SELECT avg(price),category
+From superstore
+WHERE category = "Kitchen Supplies";
+
+#8. Find the max price in the kitchen supplies category 
+SELECT max(price),category
+From superstore
+WHERE category = "Kitchen Supplies";
+
+#9. Find the item count in the kitchen supplies category 
+SELECT count(item_id),category
+From superstore
+WHERE category = "Kitchen Supplies";
+
+#10. Find the inventory for the air purifiers
+SELECT (stock_quantity),item_name
+FROM superstore
+WHERE item_name = "Air Purifier";
+
+#11. Order by avg rating descending with item name and categoty
+SELECT (average_rating),item_name,category
+FROM superstore
+ORDER BY average_rating desc;
+
