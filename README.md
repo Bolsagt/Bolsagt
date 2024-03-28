@@ -23,6 +23,6 @@ This repository showcases my SQL projects. Feel free to explore and reach out wi
 <br>
 
 ### Let's Connect!
-Reach out on **[LinkedIn](www.linkedin.com/in/christian-laporte-32838216)** or contact me by **[email](mailto:laporte2000@hotmail.com)**.
+Reach out on **[LinkedIn](https://linkedin.com/in/christian-laporte-32838216)** or contact me by **[email](mailto:laporte2000@hotmail.com)**.
 
 <br>
